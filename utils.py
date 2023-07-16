@@ -135,7 +135,7 @@ class FileDownloader():
                 os.makedirs(path)
     
     
-    async def __download(self,packageid,path,user=677900):
+    async def __download(self,packageid,path,user):
         url = f'https://gzzxres.lexuewang.cn:8003/DataSynchronizeGetSingleData?packageid={packageid}&clientid=myipad_{user}'
         headers = {'Cache-Control': 'max-age=1296000, min-fresh=21600', 'Host': 'gzzxres.lexuewang.cn:8003', 'Connection': 'Keep-Alive', 'Accept-Encoding': 'gzip', 'User-Agent': 'okhttp/3.14.9'}
         cookies = {}
